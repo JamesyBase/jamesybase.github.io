@@ -12,13 +12,19 @@
 		body {font: 62.5%/18px sans-serif;}
 		.csswizardy a {color:#212121; font-size: 1.5em; padding: 0 1em; text-decoration: none; text-transform:uppercase;}
 		.csswizardy a.selected {text-decoration: underline;}
-		ul {border-radius: 3px; background-color: #f6f6f6; padding: 1em;}
-		ul li {display: inline; border-right: 1px dashed rgba(0,0,0,0.1); padding: 1.25em .5em;}
+		.nav {border-radius: 3px; background-color: #f6f6f6; padding: 1em;}
+		.nav li {display: inline; border-right: 1px dashed rgba(0,0,0,0.1); padding: 1.25em .5em;}
 		
 		<!--
 		
 		Notes 
 		is-active for selected state
+		
+		Bind on to specific parts of the dom
+		
+		color is a hertied cascading property
+		
+		* { all:initial} 
 		
 		 -->
 			
@@ -27,7 +33,7 @@
     <body>
         
         <div class="csswizardy">
-        	<ul>
+        	<ul class="nav">
 				<li><a href="#">The Workshop</a></li>
 				<li><a href="#">2013 Schedule</a></li>
 				<li><a href="#" class="selected">About csswizardy</a></li>
